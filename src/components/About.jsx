@@ -5,5 +5,4 @@ function About() {
     <div>About</div>
   )
 }
-wdw
 export default About;
