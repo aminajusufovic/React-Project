@@ -4,7 +4,7 @@ import React, { useEffect, useState } from 'react'
 import Nav from "./components/Nav";
 import Home from "./components/Home";
 import About from "./components/About";
-import Products from "./components/Products";
+import Products from "./components/ProductPage/Products";
 import Loading from "./components/Loading";
 const url = "https://course-api.com/react-store-products"
 //https://github.com/john-smilga/react-course-comfy-sloth-store
