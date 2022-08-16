@@ -65,6 +65,43 @@ color:var(--secondary)
 }
 .product-content{
   border: 1px solid brown;
-  height: 50rem;
   width: 60rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.product-card{
+  width:30%;
+  /* height:300px; */
+  margin: 10px;
+  background-color: var(--background);
+  border-radius: 8px;
+}
+
+.product-card img{
+  width:100%;
+  height:300px;
+  border-radius: 8px;
+}
+
+.product-card-text{
+  display: flex;
+  justify-content:space-between;
+  width:100%;
+  margin-top: 15px;
+}
+
+.product-card-name{
+  font-size: 18px;
+  width: 50%;
+}
+
+.product-card-price{
+  width: 50%;
+  font-size:18px;
+}
+
+#price{
+  text-align:right;
+  color: rgb(165, 112, 42);
 }

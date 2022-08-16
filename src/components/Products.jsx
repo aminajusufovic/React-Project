@@ -1,7 +1,8 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import App from '../App'
+import ProductCard from './ProductCard';
 //vahid poceo nesto da radi
-function Products() {
+function Products({productsData}) {
   return (
     <div>
     <div className='home-products'>
@@ -11,7 +12,13 @@ function Products() {
         <aside className='product-aside'>
             aside
         </aside>
-        <div className='product-content'>proizvodi</div>
+        <div className='product-content'>
+         {
+          productsData.map((product) => {
+         return <ProductCard key={product.id} {...product}/>
+         })
+          }
+        </div>
         </div>
         
     </div>
