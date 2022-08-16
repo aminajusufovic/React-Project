@@ -6,6 +6,7 @@ import Home from "./components/Home";
 import About from "./components/About";
 import Products from "./components/ProductPage/Products";
 import Loading from "./components/Loading";
+import SingleProduct from "./components/ProductPage/SingleProduct";
 const url = "https://course-api.com/react-store-products"
 //https://github.com/john-smilga/react-course-comfy-sloth-store
 function App() {
@@ -22,7 +23,7 @@ const fetchProductsData = async () => {
             const productsData = await response.json();
             setLoading(false);
             setProductData(productsData);
-            console.log(productsData)
+            // console.log(productsData)
         } catch (error) {
             setLoading(false);
             console.log(error);
@@ -49,6 +50,9 @@ if (loading) {
       <Route path={"/"} element={<Home/>} />
       <Route path={"/about"} element={<About/>} />
       <Route path={"/products"} element={<Products productsData= {productsData}/>} />
+      {productsData.map((singleProduct) => {
+        return <Route path={`/products/${singleProduct.id}`} element={<SingleProduct singleProduct={singleProduct} key={singleProduct.id} />} />
+      })}
     </Routes>
   </div>;
 }
