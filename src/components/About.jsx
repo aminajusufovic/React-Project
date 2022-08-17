@@ -10,9 +10,7 @@ function About() {
         alt="nice desk"
       />
 
-      <div className="aboutTitle">
-        <h2>Our story</h2>
-      </div>
+      <div className="aboutTitle">{/* <h2>Our story</h2> */}</div>
       <p className="aboutTekst">
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat
         accusantium sapiente tempora sed dolore esse deserunt eaque excepturi,
