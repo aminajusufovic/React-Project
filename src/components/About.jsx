@@ -4,7 +4,11 @@ import "../App.css";
 function About() {
   return (
     <main>
-      <img className="aboutSlika" src="#" alt="nice desk" />
+      <img
+        className="aboutSlika"
+        src="hero-bcg.a876f19f.jpeg"
+        alt="nice desk"
+      />
 
       <div className="aboutTitle">
         <h2>Our story</h2>
@@ -20,6 +24,9 @@ function About() {
         totam velit saepe sed quos similique amet. Ex, voluptate accusamus
         nesciunt totam vitae esse iste.
       </p>
+      <div className="aboutFooterr">
+        <footer>© 2022 ComfySloth All rights reserved</footer>
+      </div>
     </main>
   );
 }
