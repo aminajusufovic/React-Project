@@ -2,13 +2,13 @@ import React, { useEffect, useState } from 'react'
 import App from '../../App'
 import ProductCard from './ProductCard';
 import AsideProduct from "./AsideProduct"
-<<<<<<< HEAD
+// <<<<<<< HEAD
 
 
-=======
+
 //vahid poceo
 //nesto
->>>>>>> 3fe28932acf93ee7fa21f73a7a2dbad4eef0b123
+// >>>>>>> 3fe28932acf93ee7fa21f73a7a2dbad4eef0b123
 function Products({productsData}) {
   return (
     <div>
