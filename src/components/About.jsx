@@ -4,10 +4,23 @@ import "../App.css";
 function About() {
   return (
     <main>
-      <img className="aboutSlika" src="#" alt="nice desk" />
+      <div className="aboutNav">
+        <a className="aboutLink" href="./Home.jsx">
+          Home
+        </a>
+        <p>/</p> <a className="aboutLink">About</a>
+      </div>
+      <img
+        className="aboutSlika"
+        src="hero-bcg.a876f19f.jpeg"
+        alt="nice desk"
+      />
 
       <div className="aboutTitle">
         <h2>Our story</h2>
+        <div>
+          <b className="aboutUnderline">_______</b>
+        </div>
       </div>
       <p className="aboutTekst">
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat
@@ -20,6 +33,11 @@ function About() {
         totam velit saepe sed quos similique amet. Ex, voluptate accusamus
         nesciunt totam vitae esse iste.
       </p>
+      <div className="aboutFooterr">
+        <footer className="aboutFooter">
+          © 2022 ComfySloth All rights reserved
+        </footer>
+      </div>
     </main>
   );
 }
