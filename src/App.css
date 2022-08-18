@@ -175,8 +175,9 @@ body {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  margin-top: 20px;
 }
-/* aboutcss */
+/* aboutcsssss */
 .aboutTekst {
   height: 300px;
   width: 530px;

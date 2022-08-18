@@ -44,6 +44,11 @@ function nesto() {
 
 
       </div>
+<div>
+<p>Price</p>
+<input type="text" />  
+</div>
+
     </div>
   )
 }
