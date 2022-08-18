@@ -2,7 +2,8 @@ import React, { useEffect, useState } from 'react'
 import App from '../../App'
 import ProductCard from './ProductCard';
 import AsideProduct from "./AsideProduct"
-//vahid poceo nesto da radi
+
+
 function Products({productsData}) {
   return (
     <div>
