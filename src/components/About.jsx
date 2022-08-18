@@ -10,8 +10,9 @@ function About() {
         alt="nice desk"
       />
 
-      <div className="aboutTitle">{/* <h2>Our story</h2> */}</div>
+    <div className="aboutTitle">{/* <h2>Our story</h2> */}</div>
       <p className="aboutTekst">
+        <h1> Our Story </h1>
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat
         accusantium sapiente tempora sed dolore esse deserunt eaque excepturi,
         delectus error accusamus vel eligendi, omnis beatae. Quisquam, dicta.
@@ -23,7 +24,7 @@ function About() {
         nesciunt totam vitae esse iste.
       </p>
       <div className="aboutFooterr">
-        <footer>© 2022 ComfySloth All rights reserved</footer>
+        <footer> © 2022 ComfySloth All rights reserved </footer>
       </div>
     </main>
   );
