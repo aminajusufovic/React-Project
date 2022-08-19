@@ -177,6 +177,24 @@ body {
   align-items: center;
   margin-top: 20px;
 }
+.aside-price, .aside-freeshipping{
+  margin-left: 5px;
+  margin-top: 20px;
+}
+.aside-freeshipping input{
+  margin-left: 5rem;
+}
+.clear-filters{
+  margin-left: 5px;
+  margin-top: 20px;
+  background-color: red;
+  color: white;
+  height: 25px;
+  width: 100px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
 /* aboutcsssss */
 .aboutTekst {
   height: 300px;

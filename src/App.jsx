@@ -23,7 +23,7 @@ const fetchProductsData = async () => {
             const productsData = await response.json();
             setLoading(false);
             setProductData(productsData);
-            // console.log(productsData)
+             console.log(productsData)
         } catch (error) {
             setLoading(false);
             console.log(error);

@@ -41,10 +41,16 @@ function nesto() {
 
 
       </div>
-<div>
+<div className='aside-price'>
 <p>Price</p>
-<input type="text" />  
+<p></p>
+<input type="range" min={0} max={99999} />  
 </div>
+<div className='aside-freeshipping'>
+  <label htmlFor="shipping">Free Shipping</label>
+  <input type="checkbox" name="shipping"/>
+</div>
+<button className='clear-filters' type='submit'>Clear Filters</button>
 
     </div>
   )
