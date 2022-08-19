@@ -16,18 +16,16 @@
 
 body {
   background:var(--background);
-  width: 95vw;
+ 
 }
 /* -----------------NAVIGATION---------------------- */
 .nav{
   height: 15vh;
-  width: 100%;
+  width: 95%;
   display: flex;
   justify-content: space-between;
-  border: 2px solid black;
 }
 .nav div{
-  border: 1px solid black;
   width: 38%;
 }
 .n1 {
