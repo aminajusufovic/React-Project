@@ -1,9 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 
-function SingleProduct(singleProduct) {
-    const { id, category, company, description, image, name, price, shipping, colors } = singleProduct.singleProduct;
-    console.log(singleProduct.singleProduct)
+function SingleProduct(props) {
+    const { id, category, company, description, image, name, price, shipping, colors } = props.singleProduct;
     return (
         <main className="single-product-container">
             <div className="single-products-nav">
