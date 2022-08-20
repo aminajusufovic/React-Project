@@ -4,11 +4,10 @@ import "../App.css";
 function About() {
   return (
     <main>
-      <img
+      {/* <img
         className="aboutSlika"
         src="hero-bcg.a876f19f.jpeg"
-        alt="nice desk"
-      />
+        alt="nice desk"/> */}
 
       <div className="aboutTitle">{/* <h2>Our story</h2> */}</div>
       <p className="aboutTekst">
