@@ -8,7 +8,6 @@ import Products from "./components/ProductPage/Products";
 import Loading from "./components/Loading";
 import SingleProduct from "./components/ProductPage/SingleProduct";
 const url = "https://course-api.com/react-store-products"
-const singleUrl = "https://course-api.com/react-store-single-product?id="
 //https://github.com/john-smilga/react-course-comfy-sloth-store
 function App() {
 
@@ -52,7 +51,7 @@ if (loading) {
       <Route path={"/about"} element={<About/>} />
       <Route path={"/products"} element={<Products productsData= {productsData}/>} />
       {productsData.map((singleProduct) => {
-        return <Route path={`/products/${singleProduct.id}`} element={<SingleProduct singleProduct={singleProduct} key={singleProduct.id} />} />
+        return <Route path={`/products/${singleProduct.id}`} element={<SingleProduct singleProductId={singleProduct.id}  />} />
       })}
     </Routes>
   </div>;
