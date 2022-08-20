@@ -8,10 +8,11 @@ import Products from "./components/ProductPage/Products";
 import Loading from "./components/Loading";
 import SingleProduct from "./components/ProductPage/SingleProduct";
 const url = "https://course-api.com/react-store-products"
+const singleUrl = "https://course-api.com/react-store-single-product?id="
 //https://github.com/john-smilga/react-course-comfy-sloth-store
 function App() {
 
-  const [productsData, setProductData] = useState()
+  const [productsData, setProductData] = useState();
   const [loading, setLoading] = useState(true);
 
 
@@ -23,7 +24,7 @@ const fetchProductsData = async () => {
             const productsData = await response.json();
             setLoading(false);
             setProductData(productsData);
-            // console.log(productsData)
+            console.log(productsData)
         } catch (error) {
             setLoading(false);
             console.log(error);
