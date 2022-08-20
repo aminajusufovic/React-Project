@@ -3,9 +3,8 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
 
-function SingleProduct(props) {
-    // const { id, category, company, description, image, name, price, shipping, colors } = props.singleProduct;
-    const productId = props.singleProductId;
+function SingleProduct({singleProductId, addToCart}) {
+    const productId = singleProductId;
     const [product, setProduct] = useState();
 
     const getSingleProduct = async () => {
@@ -13,11 +12,14 @@ function SingleProduct(props) {
         const response = await axios.get(url);
         console.log(response.data);
         setProduct(response.data);
+        addToCart(response.data);
     }
 
     useEffect(() => {
         getSingleProduct();
     }, [])
+
+
 
     return (
         <main className="single-product-container">
@@ -63,6 +65,10 @@ function SingleProduct(props) {
                         <p>{product && product.company}</p>
                     </div>
                     <div className="single-border"></div>
+
+                    <div className="add-to-cart">
+                    <Link to="/cart">add to cart</Link>
+                    </div>
                 </div>
             </div>
         </main>

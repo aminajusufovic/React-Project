@@ -30,6 +30,10 @@ const fetchProductsData = async () => {
         }
 }
 
+const addToCart = (data) => {
+console.log(data);
+}
+
 
 useEffect(() => {
 fetchProductsData();
@@ -51,8 +55,12 @@ if (loading) {
       <Route path={"/about"} element={<About/>} />
       <Route path={"/products"} element={<Products productsData= {productsData}/>} />
       {productsData.map((singleProduct) => {
-        return <Route path={`/products/${singleProduct.id}`} element={<SingleProduct singleProductId={singleProduct.id}  />} />
+        return <Route path={`/products/${singleProduct.id}`} element={<SingleProduct singleProductId={singleProduct.id} addToCart={addToCart} />} />
       })}
+      <Route path={"/cart"} element={<div addToCart={addToCart}>
+        {/* Samo ti napravi posebnu carticu za cart i nju stavi umesto ovog diva
+         i u nju posalji ovo addToCart. */}
+      </div>}/>
     </Routes>
   </div>;
 }
