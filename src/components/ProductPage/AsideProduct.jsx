@@ -4,9 +4,7 @@ import App from '../../App'
 function nesto() {
   return (
     <div>
-      <selection class="prvi">
-        <div class="kvadrat"> 
-        <button class="active"> </button></div> </selection>
+    
       <input type="text" placeholder='S e a r c h' className='input-aside' />
       <p className='p-product'>Category</p>
       <ul className="product-aside-list1">
