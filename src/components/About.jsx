@@ -9,7 +9,9 @@ function About() {
         src="hero-bcg.a876f19f.jpeg"
         alt="nice desk"/> */}
 
-      <div className="aboutTitle">{/* <h2>Our story</h2> */}</div>
+      <div className="aboutTitle">
+        <h2>Our story</h2>
+      </div>
       <p className="aboutTekst">
         <h1> Our Story </h1>
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat
