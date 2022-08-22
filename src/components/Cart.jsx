@@ -18,8 +18,10 @@
 import React from "react"
 import { useState } from 'react';
 
-function Cart({prop},{Quantity}){
-const {id,image,colors,price,name}=prop
+function Cart({prop, quantity}){
+console.log(quantity);
+console.log(prop)
+const {id,image,colors,price,name}=prop;
  var korpa=[]
  var postoji=0
  var storaniID=0
@@ -37,7 +39,7 @@ const {id,image,colors,price,name}=prop
 korpa.push(prop)
   }
   else{
-   korpa[storaniID].price+=prop.price*Quantity
+   korpa[storaniID].price+=prop.price*quantity
   }
  }
  return <div>

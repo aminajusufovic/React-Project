@@ -15,7 +15,8 @@ function App() {
 
   const [productsData, setProductData] = useState();
   const [loading, setLoading] = useState(true);
-
+  const [cartData, setCartData] = useState();
+  const [quantity, setQuantity] = useState();
 
 
 const fetchProductsData = async () => {
@@ -25,18 +26,21 @@ const fetchProductsData = async () => {
             const productsData = await response.json();
             setLoading(false);
             setProductData(productsData);
-            console.log(productsData)
+            // console.log(productsData)
         } catch (error) {
             setLoading(false);
             console.log(error);
         }
 }
 
+
 const addToCart = (data) => {
+  setCartData(data)
 }
 
-const quantity = (data) => {
 
+const quantityData = (data) => {
+setQuantity(data)
 }
 
 
@@ -59,12 +63,13 @@ if (loading) {
       <Route path={"/"} element={<Home/>} />
       <Route path={"/about"} element={<About/>} />
       <Route path={"/products"} element={<Products productsData= {productsData}/>} />
-      <Route path={"/Korpa"} element={<Korpa/>}/>
+      {/* <Route path={"/Korpa"} element={<Korpa/>}/> */}
+
       {productsData.map((singleProduct) => {
         return <Route path={`/products/${singleProduct.id}`} 
-        element={<SingleProduct singleProductId={singleProduct.id} addToCart={addToCart} quantity={quantity} />} />
+        element={<SingleProduct singleProductId={singleProduct.id} addToCart={addToCart} quantity={quantityData} />} />
       })}
-      {<Route path={"/Cart"} element={<Cart addToCart={addToCart} quantity={quantity}/>}/> }
+      {<Route path={"/Cart"} element={<Cart prop={cartData} quantity={quantity}/>}/> }
     </Routes>
   </div>;
 }
