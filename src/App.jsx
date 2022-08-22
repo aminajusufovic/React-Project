@@ -5,6 +5,8 @@ import Nav from "./components/Nav";
 import Home from "./components/Home";
 import About from "./components/About";
 import Products from "./components/ProductPage/Products";
+import Korpa from "./components/Korpa"
+import Cart from "./components/Cart"
 import Loading from "./components/Loading";
 import SingleProduct from "./components/ProductPage/SingleProduct";
 const url = "https://course-api.com/react-store-products"
@@ -50,10 +52,14 @@ if (loading) {
       <Route path={"/"} element={<Home/>} />
       <Route path={"/about"} element={<About/>} />
       <Route path={"/products"} element={<Products productsData= {productsData}/>} />
+      <Route path={"/Korpa"} element={<Korpa/>}/>
       {productsData.map((singleProduct) => {
-        return <Route path={`/products/${singleProduct.id}`} element={<SingleProduct singleProduct={singleProduct} key={singleProduct.id} />} />
+        return <Route path={`/products/${singleProduct.id}`} 
+        element={<SingleProduct singleProductId={singleProduct.id} addToCart={addToCart} quantity={quantity} />} />
       })}
+      {<Route path={"/Cart"} element={<Cart addToCart={addToCart} quantity={quantity}/>}/> }
     </Routes>
+    <Cart/>
   </div>;
 }
 
