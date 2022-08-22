@@ -3,9 +3,10 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
 
-function SingleProduct({singleProductId, addToCart}) {
+function SingleProduct({ singleProductId, addToCart, quantity }) {
     const productId = singleProductId;
     const [product, setProduct] = useState();
+    const [counter, setCounter] = useState(1);
 
     const getSingleProduct = async () => {
         const url = `https://course-api.com/react-store-single-product?id=${productId}`;
@@ -14,6 +15,8 @@ function SingleProduct({singleProductId, addToCart}) {
         setProduct(response.data);
         addToCart(response.data);
     }
+
+    quantity(counter)
 
     useEffect(() => {
         getSingleProduct();
@@ -40,7 +43,9 @@ function SingleProduct({singleProductId, addToCart}) {
 
                 <div className="single-product-text">
                     <h1>{product && product.name}</h1>
-                    <div className="single-product-reviews">******</div>
+                    <div className="single-product-reviews">
+
+                    </div>
                     <h4 id="single-price">${product && product.price / 100}</h4>
                     <br />
                     <p id="single-description">{product && product.description}</p>
@@ -66,9 +71,22 @@ function SingleProduct({singleProductId, addToCart}) {
                     </div>
                     <div className="single-border"></div>
 
-                    <div className="add-to-cart">
-                    <Link to="/cart">add to cart</Link>
-                    </div>
+                        <div className="single-quantity">
+                            <button onClick={() => {
+                                if (counter < 2) {
+                                    counter = 1;
+                                }
+                                setCounter(counter - 1)
+                            }}><h1>-</h1></button>
+
+                            <h1>{counter}</h1>
+
+                            <button onClick={() => {
+                                
+                                setCounter(counter + 1)
+                            }}><h1>+</h1></button>                        </div>
+                        <Link to="/cart"><button className="add-to-cart">Add to cart</button></Link>
+                    
                 </div>
             </div>
         </main>
