@@ -11,7 +11,7 @@ function SingleProduct({ singleProductId, addToCart, quantity }) {
     const getSingleProduct = async () => {
         const url = `https://course-api.com/react-store-single-product?id=${productId}`;
         const response = await axios.get(url);
-        console.log(response.data);
+        // console.log(response.data);
         setProduct(response.data);
         addToCart(response.data);
     }
