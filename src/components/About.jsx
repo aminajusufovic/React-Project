@@ -4,25 +4,14 @@ import "../App.css";
 function About() {
   return (
     <main>
-      <div className="aboutNav">
-        <a className="aboutLink" href="./Home.jsx">
-          Home
-        </a>
-        <p>/</p> <a className="aboutLink">About</a>
-      </div>
-      <img
+      {/* <img
         className="aboutSlika"
         src="hero-bcg.a876f19f.jpeg"
-        alt="nice desk"
-      />
+        alt="nice desk"/> */}
 
-      <div className="aboutTitle">
-        <h2>Our story</h2>
-        <div>
-          <b className="aboutUnderline">_______</b>
-        </div>
-      </div>
+      <div className="aboutTitle">{/* <h2>Our story</h2> */}</div>
       <p className="aboutTekst">
+        <h1> Our Story </h1>
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat
         accusantium sapiente tempora sed dolore esse deserunt eaque excepturi,
         delectus error accusamus vel eligendi, omnis beatae. Quisquam, dicta.
@@ -34,9 +23,7 @@ function About() {
         nesciunt totam vitae esse iste.
       </p>
       <div className="aboutFooterr">
-        <footer className="aboutFooter">
-          © 2022 ComfySloth All rights reserved
-        </footer>
+        <footer> © 2022 ComfySloth All rights reserved </footer>
       </div>
     </main>
   );

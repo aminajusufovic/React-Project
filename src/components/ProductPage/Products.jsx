@@ -13,7 +13,7 @@ function Products({productsData}) {
   return (
     <div>
     <div className='home-products'>
-        <h1>Home/Products</h1>
+        <h1>Home / Products</h1>
         </div> 
         <div className='product-donji-div' >   
         <aside className='product-aside'>

@@ -13,7 +13,7 @@ const url = "https://course-api.com/react-store-products"
 //https://github.com/john-smilga/react-course-comfy-sloth-store
 function App() {
 
-  const [productsData, setProductData] = useState()
+  const [productsData, setProductData] = useState();
   const [loading, setLoading] = useState(true);
 
 
@@ -25,11 +25,18 @@ const fetchProductsData = async () => {
             const productsData = await response.json();
             setLoading(false);
             setProductData(productsData);
-            // console.log(productsData)
+            console.log(productsData)
         } catch (error) {
             setLoading(false);
             console.log(error);
         }
+}
+
+const addToCart = (data) => {
+}
+
+const quantity = (data) => {
+
 }
 
 
@@ -59,7 +66,6 @@ if (loading) {
       })}
       {<Route path={"/Cart"} element={<Cart addToCart={addToCart} quantity={quantity}/>}/> }
     </Routes>
-    <Cart/>
   </div>;
 }
 
