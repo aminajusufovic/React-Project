@@ -71,22 +71,22 @@ function SingleProduct({ singleProductId, addToCart, quantity }) {
                     </div>
                     <div className="single-border"></div>
 
-                        <div className="single-quantity">
-                            <button onClick={() => {
-                                if (counter < 2) {
-                                    counter = 1;
-                                }
-                                setCounter(counter - 1)
-                            }}><h1>-</h1></button>
+                    <div className="single-quantity">
+                        <button onClick={() => {
+                            if (counter < 2) {
+                                counter = 1;
+                            }
+                            setCounter(counter - 1)
+                        }}><h1>-</h1></button>
 
-                            <h1>{counter}</h1>
+                        <h1>{counter}</h1>
 
-                            <button onClick={() => {
-                                
-                                setCounter(counter + 1)
-                            }}><h1>+</h1></button>                        </div>
-                        <Link to="/cart"><button className="add-to-cart">Add to cart</button></Link>
-                    
+                        <button onClick={() => {
+
+                            setCounter(counter + 1)
+                        }}><h1>+</h1></button>                        </div>
+                    <Link to="/cart"><button className="add-to-cart">Add to cart</button></Link>
+
                 </div>
             </div>
         </main>
