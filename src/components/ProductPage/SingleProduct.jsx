@@ -13,7 +13,6 @@ function SingleProduct({ singleProductId, addToCart, quantity }) {
         const response = await axios.get(url);
         // console.log(response.data);
         setProduct(response.data);
-        addToCart(response.data);
     }
 
     quantity(counter)
@@ -71,22 +70,26 @@ function SingleProduct({ singleProductId, addToCart, quantity }) {
                     </div>
                     <div className="single-border"></div>
 
-                        <div className="single-quantity">
-                            <button onClick={() => {
-                                if (counter < 2) {
-                                    counter = 1;
-                                }
-                                setCounter(counter - 1)
-                            }}><h1>-</h1></button>
 
-                            <h1>{counter}</h1>
+                    <div className="single-quantity">
+                        <button onClick={() => {
+                            if (counter < 2) {
+                                counter = 1;
+                            }
+                            setCounter(counter - 1)
+                        }}><h1>-</h1></button>
 
-                            <button onClick={() => {
-                                
-                                setCounter(counter + 1)
-                            }}><h1>+</h1></button>                        </div>
-                        <Link to="/Korpa"><button className="add-to-cart">Add to cart</button></Link>
-                    
+                        <h1>{counter}</h1>
+
+                        <button onClick={() => {
+
+                            setCounter(counter + 1)
+                        }}><h1>+</h1></button>                        </div>
+                    <Link to="/Korpa"><button className="add-to-cart"
+                    onClick={()=> {
+                        addToCart(product);
+                    }}>Add to cart</button></Link>
+
                 </div>
             </div>
         </main>
