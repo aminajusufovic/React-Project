@@ -70,6 +70,7 @@ function SingleProduct({ singleProductId, addToCart, quantity }) {
                     </div>
                     <div className="single-border"></div>
 
+
                     <div className="single-quantity">
                         <button onClick={() => {
                             if (counter < 2) {
@@ -84,7 +85,7 @@ function SingleProduct({ singleProductId, addToCart, quantity }) {
 
                             setCounter(counter + 1)
                         }}><h1>+</h1></button>                        </div>
-                    <Link to="/cart"><button className="add-to-cart"
+                    <Link to="/Korpa"><button className="add-to-cart"
                     onClick={()=> {
                         addToCart(product);
                     }}>Add to cart</button></Link>

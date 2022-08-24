@@ -69,7 +69,7 @@ if (loading) {
         return <Route path={`/products/${singleProduct.id}`} 
         element={<SingleProduct singleProductId={singleProduct.id} addToCart={addToCart} quantity={quantityData} />} />
       })}
-      {<Route path={"/Cart"} element={<Cart prop={cartData} quantity={quantity}/>}/> }
+      {<Route path={"/Korpa"} element={<Korpa prop={cartData} quantity={quantity}/>}/> }
     </Routes>
   </div>;
 }
