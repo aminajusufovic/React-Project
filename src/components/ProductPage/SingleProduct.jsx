@@ -85,7 +85,7 @@ function SingleProduct({ singleProductId, addToCart, quantity }) {
                                 
                                 setCounter(counter + 1)
                             }}><h1>+</h1></button>                        </div>
-                        <Link to="/cart"><button className="add-to-cart">Add to cart</button></Link>
+                        <Link to="/Korpa"><button className="add-to-cart">Add to cart</button></Link>
                     
                 </div>
             </div>
