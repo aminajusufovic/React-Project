@@ -13,7 +13,6 @@ function SingleProduct({ singleProductId, addToCart, quantity }) {
         const response = await axios.get(url);
         // console.log(response.data);
         setProduct(response.data);
-        addToCart(response.data);
     }
 
     quantity(counter)
@@ -85,7 +84,10 @@ function SingleProduct({ singleProductId, addToCart, quantity }) {
 
                             setCounter(counter + 1)
                         }}><h1>+</h1></button>                        </div>
-                    <Link to="/cart"><button className="add-to-cart">Add to cart</button></Link>
+                    <Link to="/cart"><button className="add-to-cart"
+                    onClick={()=> {
+                        addToCart(product);
+                    }}>Add to cart</button></Link>
 
                 </div>
             </div>
