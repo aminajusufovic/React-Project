@@ -91,12 +91,12 @@ body {
 /* ---------------------------------------------------------------- */
 
 /* ---------------------------CART--------------------------------- */
-.k-main{
+.k-main {
   width: 100%;
   height: 100vh;
   border: 2px solid red;
 }
-.k-head{
+.k-head {
   width: 100%;
   height: 23%;
   background-color: var(--secondary);
@@ -105,19 +105,19 @@ body {
   padding-left: 10%;
   font-size: 30px;
 }
-.k-h-boja{
+.k-h-boja {
   color: white;
   margin-right: 10px;
 }
-.h-shop{
+.h-shop {
   flex-direction: column;
   width: 100%;
-height: 80%;
-display: flex;
-align-items: center;
-padding-top: 10%;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  padding-top: 10%;
 }
-.h-shop ul{
+.h-shop ul {
   display: flex;
   list-style-type: none;
   width: 90%;
@@ -128,11 +128,10 @@ padding-top: 10%;
   align-items: center;
   font-size: 16px;
 }
-.h-shop ul li{
+.h-shop ul li {
   color: rgba(0, 0, 0, 0.6);
-
 }
-.k-total{
+.k-total {
   width: 30%;
   height: 35%;
   border: 1px solid rgba(0, 0, 0, 0.3);
@@ -143,7 +142,8 @@ padding-top: 10%;
   align-items: center;
   flex-direction: column;
 }
-.k-total-1, .k-total-2{
+.k-total-1,
+.k-total-2 {
   width: 70%;
   height: 35%;
   border-bottom: 1px solid black;
@@ -152,43 +152,42 @@ padding-top: 10%;
   flex-direction: row;
   flex-wrap: wrap;
 }
-.pomeraj{
+.pomeraj {
   margin-right: 20px;
 }
-.k-total-2{
+.k-total-2 {
   align-items: center;
   border-bottom: none;
 }
 
-.cart-main{
+.cart-main {
   width: 90%;
   height: 100px;
   border: 1px solid red;
 }
-.cart-main ul{
+.cart-main ul {
   display: flex;
   width: 100%;
   height: 100%;
   justify-content: space-around;
   list-style-type: none;
 }
-.cart-main ul li{
+.cart-main ul li {
   display: flex;
   align-items: center;
 }
-.prvi-cart{
+.prvi-cart {
   flex-direction: row;
   flex-wrap: wrap;
   border: 1px solid black;
 }
-.p1{
+.p1 {
   height: 100%;
 }
-.p1-2{
+.p1-2 {
   display: flex;
-  
 }
-.color-div{
+.color-div {
   width: 15px;
   height: 15px;
   border: 1px solid black;
@@ -196,14 +195,14 @@ padding-top: 10%;
   margin-left: 5px;
   margin-top: 2px;
 }
-.c-image-div{
+.c-image-div {
   width: 100px;
   height: 70px;
   border: 1px solid red;
 }
-#slika-cart{
+#slika-cart {
   width: 100px;
-  height:70px ;
+  height: 70px;
 }
 
 /* ------------------------------------------------------------------------- */
@@ -429,10 +428,10 @@ padding-top: 10%;
   display: flex;
   background-color: rgb(252, 205, 213);
   color: #393939;
-  font-size: 50px;
+  font-size: 40px;
   height: 100px;
   padding-left: 60px;
-  padding-top: 20px;
+  padding-top: 25px;
   font-weight: 500;
 }
 .aboutLink {
@@ -535,16 +534,16 @@ padding-top: 10%;
   border-bottom: 1px solid var(--button2);
 }
 
-.single-quantity{
+.single-quantity {
   display: flex;
-  width:150px;
-  justify-content:space-between;
+  width: 150px;
+  justify-content: space-between;
 }
 
 .single-quantity button {
-  border:none;
+  border: none;
   outline: none;
-  background-color:transparent;
+  background-color: transparent;
   padding: 5px;
 }
 
@@ -553,12 +552,12 @@ padding-top: 10%;
   padding: 0px 10px 0px 10px;
 }
 
-.add-to-cart{
-  width:150px;
+.add-to-cart {
+  width: 150px;
   padding: 10px;
   margin-top: 10px;
   border: none;
-  background-color:var(--button);
+  background-color: var(--button);
   border-radius: 4px;
   color: white;
   cursor: pointer;

@@ -27,7 +27,7 @@ function Nav() {
           <Link className="n3-link" to="/Korpa">
             {" "}
             Cart
-            <FaShoppingCart className="icon" />
+            <FaShoppingCart className="icon" /> ti
           </Link>
         </div>
         <div className="login">

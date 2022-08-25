@@ -4,6 +4,10 @@ import "../App.css";
 function About() {
   return (
     <main>
+      <nav className="aboutNav">
+        <p className="aboutLink">Home /</p>
+        <p className="aboutLink">About</p>
+      </nav>
       <img
         className="aboutSlika"
         src="hero-bcg.a876f19f.jpeg"
@@ -12,9 +16,11 @@ function About() {
 
       <div className="aboutTitle">
         <h2>Our story</h2>
+        <p>
+          <b className="aboutUnderline">________</b>
+        </p>
       </div>
       <p className="aboutTekst">
-        <h1> Our Story </h1>
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat
         accusantium sapiente tempora sed dolore esse deserunt eaque excepturi,
         delectus error accusamus vel eligendi, omnis beatae. Quisquam, dicta.
