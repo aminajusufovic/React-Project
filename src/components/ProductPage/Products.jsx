@@ -11,14 +11,15 @@ import SortProduct from './SortProduct';
 //nesto
 // >>>>>>> 3fe28932acf93ee7fa21f73a7a2dbad4eef0b123
 function Products({productsData}) {
+  
   return (
     <div>
     <div className='home-products'>
-        <h1>Home/Products</h1>
+        <h1>Home / Products</h1>
         </div> 
         <div className='product-donji-div' >   
         <aside className='product-aside'>
-            <AsideProduct/>
+            <AsideProduct productsData= {productsData} />
         </aside>
         <div>
         <section className='product-sort-section'>
