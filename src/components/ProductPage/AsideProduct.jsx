@@ -1,10 +1,31 @@
 import React from 'react'
 import App from '../../App'
+import productsData from "../../App"
+import { useState, useEffect } from 'react'
 
-function nesto() {
+function AsideProduct({productsData}) {
+
+const [searchTerm, setsearchTerm] = useState("")
+
+ function searchIput(){
+  productsData.filter((val)=>{
+    if(searchTerm==""){
+      return val
+    }
+    else if(val.name.toLowerCase().includes(searchTerm.toLowerCase())){
+      return val
+    }
+  })
+
+ }  
+// useEffect(() => {
+//   searchIput()
+// }, [searchTerm])
+
+
   return (
     <div>
-      <input type="text" placeholder='S e a r c h' className='input-aside' />
+      <input type="text" placeholder='S e a r c h' className='input-aside' onChange={e=>{setsearchTerm(e.target.value)}} />
       <p className='p-product'>Category</p>
       <ul className="product-aside-list1">
         <li><a href=''>All</a> </li>
@@ -56,4 +77,4 @@ function nesto() {
   )
 }
 
-export default nesto
+export default AsideProduct

@@ -3,7 +3,8 @@ import App from '../../App'
 import ProductCard from './ProductCard';
 import AsideProduct from "./AsideProduct"
 // <<<<<<< HEAD
-
+import productsData from "../../App"
+import SortProduct from './SortProduct';
 
 
 //vahid poceo
@@ -19,12 +20,17 @@ function Products({productsData}) {
         <aside className='product-aside'>
             <AsideProduct/>
         </aside>
+        <div>
+        <section className='product-sort-section'>
+          <SortProduct/>
+        </section>
         <div className='product-content'>
          {
           productsData.map((product) => {
          return <ProductCard key={product.id} {...product}/>
          })
           }
+        </div>
         </div>
         </div>
         
