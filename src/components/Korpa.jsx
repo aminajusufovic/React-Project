@@ -9,7 +9,7 @@ function Korpa({prop,quantity}){
  <ul>
   <li> item </li>
 <li> price </li>
-<li>Quantity</li>
+<li> quantity</li>
 <li>Subtotal</li>
  </ul>
 <Cart prop={prop} quantity={quantity}/>
