@@ -24,11 +24,11 @@ function AsideProduct({ productsData }) {
       if (
         productsData.category.includes(
             "office"      ||
-            "living room" ||
-            "kitchen"     ||
-            "bedroom"     ||
-            "dining"      ||
-            "kids"        ||
+            "living room"   ||
+            "kitchen"         ||
+            "bedroom"           ||
+            "dining"              ||
+            "kids"                  ||
         )
       ) {
         return val;
