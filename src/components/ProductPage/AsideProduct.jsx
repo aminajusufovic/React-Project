@@ -60,6 +60,15 @@ function AsideProduct({ productsData }) {
     });
   }
 
+  function CategoryKitchen() {
+    productsData.filter((val) => {
+      if (productsData.category.includes("kitchen")) {
+        return val;
+
+      }
+    })
+  }
+
   function CategoryBedroom() {
     productsData.filter((val) => {
       if (productsData.category.includes("bedroom")) {
