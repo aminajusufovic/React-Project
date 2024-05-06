@@ -7,7 +7,7 @@ function Korpa({prop,quantity}){
 <div className="k-head"><h3 className="k-h-boja">Home </h3><h3> / Cart</h3></div>
 <div className="h-shop">
  <ul>
-  <li>Item</li>
+  <li> item </li>
 <li>Price</li>
 <li>Quantity</li>
 <li>Subtotal</li>
