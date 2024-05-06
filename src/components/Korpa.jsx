@@ -17,7 +17,7 @@ function Korpa({prop,quantity}){
 <div className="k-total">
 <div className="k-total-1">
  <h3> subtotal :</h3> <h3>$257.53</h3>
- <h3>Shipping Fee:</h3> <h3 className="pomeraj">$5.28</h3>
+ <h3> shipping  Shipping Fee:</h3> <h3 className="pomeraj">$5.28</h3>
 </div>
 <div className="k-total-2">
  <h2>Order Total:</h2> <h2>$263.81</h2>
