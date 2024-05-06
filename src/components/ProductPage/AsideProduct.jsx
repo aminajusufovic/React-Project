@@ -23,12 +23,12 @@ function AsideProduct({ productsData }) {
     productsData.filter((val) => {
       if (
         productsData.category.includes(
-          "office" ||
+            "office"      ||
             "living room" ||
-            "kitchen" ||
-            "bedroom" ||
-            "dining" ||
-            "kids"
+            "kitchen"     ||
+            "bedroom"     ||
+            "dining"      ||
+            "kids"        ||
         )
       ) {
         return val;
