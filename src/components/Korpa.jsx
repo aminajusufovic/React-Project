@@ -4,7 +4,7 @@ function Korpa({prop,quantity}){
  return(
   
   <div className="k-main">
-<div className="k-head"><h3 className="k-h-boja">Home </h3><h3> / Cart</h3></div>
+<div className="k-head"><h3 className="k-h-boja"> Home </h3><h3> / Cart</h3></div>
 <div className="h-shop">
  <ul>
   <li> item </li>
