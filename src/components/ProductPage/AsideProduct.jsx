@@ -44,11 +44,7 @@ function AsideProduct({ productsData }) {
     });
   }
 
-
-
-  function Categoryoffice () {
-    productsData.filter(())
-  }
+  
   function CategoryLivingRoom() {
     productsData.filter((val) => {
       if (productsData.category.includes("living room")) {
