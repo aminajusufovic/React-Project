@@ -29,7 +29,7 @@ function AsideProduct({ productsData }) {
             "bedroom"           ||
             "dining"              ||
             "kids"                  ||
-        ))
+        )
       {
         return val;
       }
@@ -37,13 +37,18 @@ function AsideProduct({ productsData }) {
   }
 
   function CategoryOffice() {
-    productsData.filter((val) => {
+    productsData.filter((val) => {cv 
       if (productsData.category.includes("office")) {
         return val;
       }
     });
   }
 
+
+
+  function Categoryoffice () {
+    productsData.filter(())
+  }
   function CategoryLivingRoom() {
     productsData.filter((val) => {
       if (productsData.category.includes("living room")) {
