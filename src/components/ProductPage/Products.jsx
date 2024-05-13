@@ -7,9 +7,7 @@ import productsData from "../../App"
 import SortProduct from './SortProduct';
 
 
-//vahid poceo
-//nesto
-// >>>>>>> 3fe28932acf93ee7fa21f73a7a2dbad4eef0b123
+
 function Products({productsData}) {
   
   return (
