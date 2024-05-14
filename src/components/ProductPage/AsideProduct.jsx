@@ -26,10 +26,10 @@ function AsideProduct({ productsData }) {
             "office"      ||
             "living room"   ||
             "kitchen"         ||
-            "bedroom"           ||
+            "bedroom"           || 
             "dining"              ||
             "kids"                  ||
-        )
+        ))
       {
         return val;
       }
@@ -44,7 +44,6 @@ function AsideProduct({ productsData }) {
     });
   }
 
-  
   function CategoryLivingRoom() {
     productsData.filter((val) => {
       if (productsData.category.includes("living room")) {
@@ -121,7 +120,7 @@ function AsideProduct({ productsData }) {
         <p>Color</p>
         <div className="aside-colors">
           <a href="">All</a>
-          <button className="product-aside-color-btn">a</button>
+          <button className="product-aside-color-btn"> A </button>
           <button className="product-aside-color-btn">b</button>
           <button className="product-aside-color-btn">c</button>
           <button className="product-aside-color-btn">d</button>
