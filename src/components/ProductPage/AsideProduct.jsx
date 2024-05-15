@@ -121,10 +121,10 @@ function AsideProduct({ productsData }) {
         <div className="aside-colors">
           <a href="">All</a>
           <button className="product-aside-color-btn"> A </button>
-          <button className="product-aside-color-btn">b</button>
-          <button className="product-aside-color-btn">c</button>
-          <button className="product-aside-color-btn">d</button>
-          <button className="product-aside-color-btn">e</button>
+          <button className="product-aside-color-btn"> b </button>
+          <button className="product-aside-color-btn"> c </button>
+          <button className="product-aside-color-btn"> d </button>
+          <button className="product-aside-color-btn"> e </button>
         </div>
       </div>
       <div className="aside-price">
