@@ -124,7 +124,7 @@ function AsideProduct({ productsData }) {
           <a href="">All</a>
           <button className="product-aside-color-btn"> A </button>
           <button className="product-aside-color-btn"> B </button>
-          <button className="product-aside-color-btn"> c </button>
+          <button className="product-aside-color-btn"> C </button>
           <button className="product-aside-color-btn"> d </button>
           <button className="product-aside-color-btn"> e </button>
         </div>
