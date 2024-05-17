@@ -25,12 +25,12 @@ function AsideProduct({ productsData }) {
     productsData.filter((val) => {
       if (
         productsData.category.includes(
-            "office"      ||
-            "living room"   ||
-            "kitchen"         ||
-            "bedroom"           || 
-            "dining"              ||
-            "kids"                  ||
+            "office",
+            "living room",
+            "kitchen",
+            "bedroom", 
+            "dining",
+            "kids",
         ))
       {
         return val;
@@ -111,7 +111,7 @@ function AsideProduct({ productsData }) {
         <p>Company</p>
         <select name="company" id="">
           <option value="all"> ALL </option>
-          <option value="macros">macros</option>
+          <option value="macros">MACROS</option>
           <option value="liddy">liddy</option>
           <option value="ikea">ikea</option>
           <option value="carresa">carresa</option>
