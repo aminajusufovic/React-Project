@@ -2,6 +2,8 @@ import React from "react";
 import App from "../../App";
 import productsData from "../../App";
 import { useState, useEffect } from "react";
+import { mockComponent } from "react-dom/test-utils";
+import { FaGalacticRepublic, FaGripLines, FaTachometerAlt } from "react-icons/fa";
 
 function AsideProduct({ productsData }) {
   const [searchTerm, setsearchTerm] = useState("");
@@ -121,7 +123,7 @@ function AsideProduct({ productsData }) {
         <div className="aside-colors">
           <a href="">All</a>
           <button className="product-aside-color-btn"> A </button>
-          <button className="product-aside-color-btn"> b </button>
+          <button className="product-aside-color-btn"> B </button>
           <button className="product-aside-color-btn"> c </button>
           <button className="product-aside-color-btn"> d </button>
           <button className="product-aside-color-btn"> e </button>
@@ -144,3 +146,7 @@ function AsideProduct({ productsData }) {
 }
 
 export default AsideProduct;
+
+
+
+
