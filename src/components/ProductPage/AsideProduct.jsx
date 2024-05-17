@@ -110,7 +110,7 @@ function AsideProduct({ productsData }) {
       <div className="product-aside-company">
         <p>Company</p>
         <select name="company" id="">
-          <option value="all">all</option>
+          <option value="all"> ALL </option>
           <option value="macros">macros</option>
           <option value="liddy">liddy</option>
           <option value="ikea">ikea</option>
@@ -139,7 +139,7 @@ function AsideProduct({ productsData }) {
         <input type="checkbox" name="shipping" />
       </div>
       <button className="clear-filters" type="submit">
-        Clear Filters
+        Clear Filters Clear Filters
       </button>
     </div>
   );
