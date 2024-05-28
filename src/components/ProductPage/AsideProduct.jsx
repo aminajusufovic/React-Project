@@ -19,7 +19,8 @@ function AsideProduct({ productsData }) {
   }
   useEffect(() => {
     searchIput();
-  }, []);
+  }, 
+  []);
 
   function CategoryAll() {
     productsData.filter((val) => {
@@ -61,7 +62,6 @@ function AsideProduct({ productsData }) {
       }
     });
   }
-
 
   function CategoryBedroom() {
     productsData.filter((val) => {
