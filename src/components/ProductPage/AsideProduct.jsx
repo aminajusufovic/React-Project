@@ -139,7 +139,7 @@ function AsideProduct({ productsData }) {
         <input type="checkbox" name="shipping" />
       </div>
       <button className="clear-filters" type="submit">
-        Clear Filters Clear Filters
+        Clear Filters
       </button>
     </div>
   );
