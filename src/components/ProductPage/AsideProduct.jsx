@@ -26,7 +26,7 @@ function AsideProduct({ productsData }) {
     productsData.filter((val) => {
       if (
         productsData.category.includes(
-            "office",
+            "OFFICE",
             "living room",
             "kitchen",
             "bedroom", 
@@ -38,6 +38,7 @@ function AsideProduct({ productsData }) {
       }
     })
   }
+
 
   function CategoryOffice() {
     productsData.filter((val) => {cv 
