@@ -16,8 +16,8 @@ function SortProduct(productsData) {
 <div className='sortby'>
     <p>Sort by</p>
     <select name="sort" id="">
-<option value="Name (A-Z)" >Name (a-z)</option>
-<option value="Name (Z-A)">Name (Z-A)</option>
+<option value="Name (A-Z)"> Name (a-z)</option>
+<option value="Name (Z-A)"> Name (Z-A)</option>
 
 
     </select>
